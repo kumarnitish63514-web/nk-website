@@ -81,12 +81,22 @@
     </div>
 
     <!-- 📞 CONTACT SECTION -->
-    <div id="contact" class="section" style="background:#222; color:white;">
+   <div id="contact" class="section" style="background:#222; color:white;">
 
-        <h2>Contact Me</h2>
-        <p>Email: your@email.com</p>
-        <p>Follow for daily tech tips!</p>
-    </div>
+    <h2>Contact Me</h2>
+
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</div>
+
 
     <!-- 🔚 FOOTER -->
     <div class="footer">
